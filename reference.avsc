@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "ReferenceData",
+  "fields": [
+    {"name": "trader_id", "type": "string"},
+    {"name": "desk_id", "type": {"name": "desk_id_enum", "type" : "enum", "symbols" : [ "Desk1", "Desk2", "Desk3", "Desk4" ]}},
+    {"name": "trade_book", "type": {"name":"trade_book_enum", "type" : "enum", "symbols" : [ "ONE", "TWO", "THREE", "FOUR" ]}},
+    {"name":"last_update",  "type": "long"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "ClickEvent",
+  "fields": [
+    {"name": "user", "type": "string"},
+    {"name": "page", "type": "string"},
+    {"name": "timestamp", "type": "long"}
+  ]
+}

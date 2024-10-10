@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "Transaction",
+  "fields": [
+    {"name": "trade_id","type": "string" },
+    {"name": "transaction_id","type": "long"},
+    {"name": "user_id", "type": "string"},
+    {"name": "amount", "type": "double"},
+    {"name": "currency", "type": "string"},
+    {"name": "timestamp", "type": "long"},
+    {"name":  "cusip", "type":"string"}
+    ]
+}
