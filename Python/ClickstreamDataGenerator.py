@@ -23,11 +23,11 @@ clickevent_schema=avroschema.parse(
 )
 
 
-# producer = KafkaProducer(
-#     bootstrap_servers='localhost:9092',
-#     value_serializer=lambda v: avroio.DatumWriter.write(v)
-#     # lambda v: json.dumps(v).encode('utf-8')
-# )
+producer = KafkaProducer(
+    bootstrap_servers='localhost:9092',
+    value_serializer=lambda v: avroio.DatumWriter.write(v)
+    # lambda v: json.dumps(v).encode('utf-8')
+)
 
 while True:
     data = generate_clickstream_data()
@@ -43,6 +43,6 @@ while True:
     # writer.append(data_array) array cannot be written as avro library
     #   does not extrapolate elements and will show schema mismatch
     writer.close()
-    # producer.send('clickstream', value=data)
+    producer.send('clickstream', value=data)
     time.sleep(1)
     exit(0)

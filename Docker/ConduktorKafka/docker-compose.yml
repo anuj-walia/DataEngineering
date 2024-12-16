@@ -23,7 +23,7 @@ services:
       - postgresql
       - redpanda-0
     ports:
-      - "8080:8080"
+      - "8083:8080"
     volumes:
       - conduktor_data:/var/conduktor
     environment:

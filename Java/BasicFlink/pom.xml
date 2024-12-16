@@ -52,7 +52,7 @@ under the License.
 	</repositories>
 
 	<dependencies>
-		<!-- Apache Flink dependencies -->
+		<!-- Apache ConduktorKafka dependencies -->
 		<!-- These dependencies are provided, because they should not be packaged into the JAR file. -->
 		<dependency>
 			<groupId>org.apache.flink</groupId>
@@ -207,7 +207,7 @@ under the License.
 	</build>
 
 	<!-- This profile helps to make things run out of the box in IntelliJ -->
-	<!-- Its adds Flink's core classes to the runtime class path. -->
+	<!-- Its adds ConduktorKafka's core classes to the runtime class path. -->
 	<!-- Otherwise they are missing in IntelliJ, because the dependency is 'provided' -->
 	<profiles>
 		<profile>

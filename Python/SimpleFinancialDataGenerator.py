@@ -28,7 +28,7 @@ session.timeout.ms=45000
 
 """
 x=True
-last_trans_id = 1;
+last_trans_id = 1
 def cleanup():
     x=False
     producer.flush()
@@ -42,7 +42,7 @@ atexit.register(cleanup)
 cusip_list = None
 with open(CUSIPS_PICKLE, 'rb') as f:
     cusip_list = pickle.load(f)
-last_trans_id=1
+last_trans_id=1 # redundant
 
 if os.path.exists('%s' % TRANS_ID_LOCK):
     f = open(TRANS_ID_LOCK, 'r')
