@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "Stack",
+  "fields": [
+    {"name": "id","type": "string" },
+    {"name": "cusip","type": "string"},
+    {"name": "venue", "type": "string"},
+    {"name": "bid", "type": "double"},
+    {"name": "ask", "type": "double"},
+    {"name": "timestamp", "type": {"type": "long", "logicalType": "timestamp-micros"}}
+    ]
+}

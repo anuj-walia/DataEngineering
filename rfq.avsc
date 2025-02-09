@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "rfq",
+  "fields": [
+    {"name": "id","type": "string" },
+    {"name": "born_time","type": {"type": "long", "logicalType": "timestamp-micros"}},
+    {"name": "receive_time", "type": {"type": "long", "logicalType": "timestamp-micros"}},
+    {"name": "ticker", "type": "string"},
+    {"name": "price", "type": "float"},
+    {"name": "state","type": "string" },
+    {"name": "completed_time", "type": ["null",{"type": "long", "logicalType": "timestamp-micros"}]}
+    ]
+}
