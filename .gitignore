@@ -1,2 +1,12 @@
 data
 .venv
+*.log*
+secrets
+*.iml
+*.ipr
+*.iws
+.idea
+.DS_Store
+target
+__pycache__/
+*.avro
