@@ -10,3 +10,4 @@ secrets
 target
 __pycache__/
 *.avro
+dependency-reduced-pom.xml
